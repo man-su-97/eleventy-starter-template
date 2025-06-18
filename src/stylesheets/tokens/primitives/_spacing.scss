@@ -1,0 +1,21 @@
+/* src/stylesheets/tokens/primitives/_spacing.scss */
+
+:root {
+  // Spacing Scale (common increments)
+  --spacing-xx-small: 0.25rem; // Added for finer control
+  --spacing-x-small: 0.5rem;
+  --spacing-small: 0.75rem; // Adjusted for common scale
+  --spacing-medium: 1rem;
+  --spacing-large: 1.5rem; // Adjusted
+  --spacing-x-large: 2rem;
+  --spacing-xx-large: 3rem; // Added
+  --spacing-xxx-large: 4rem; // Added
+
+  // Container Sizing
+  --container-max-width: 1200px;
+  --container-padding: var(--spacing-medium); /* Referencing spacing token */
+
+  // Grid Spacing
+  --grid-gap: var(--spacing-large); /* Referencing spacing token */
+  --flex-gap: var(--spacing-medium); /* Referencing spacing token */
+}

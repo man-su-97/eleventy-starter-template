@@ -1,0 +1,9 @@
+{
+  "main": [
+    { "text": "Home", "url": "/" },
+    { "text": "Find A Hearing Aid For Me", "url": "/find-hearing-aid/" },
+    { "text": "Social Impact", "url": "/social-impact/" },
+    { "text": "Book A Free Demo", "url": "/book-demo/" },
+    { "text": "Contact Us", "url": "/contact/" }
+  ]
+}

@@ -14,7 +14,8 @@
       }}{% endif %}"
     />
     <meta name="copyright" content="{{ site.author.name }}" />
-    {% if site.isLive %}
+
+    {# Conditional SEO tags for live environment #} {% if site.isLive %}
     <meta name="revisit-after" content="1 day" />
     <meta
       name="keywords"
@@ -103,16 +104,17 @@
     <meta property="og:image" content="{{ site.logo }}" />
     {% if site.seo.bing_verification %}
     <meta name="msvalidate.01" content="{{ site.seo.bing_verification }}" />
-    {% endif %} {% endif %}
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
+    {% endif %} {% endif %} {# Dynamic Title Tag #}
     <title>{{ site.title }} {{ title }}</title>
+    {# Link to your compiled main CSS file, which includes your design system #}
     <link rel="stylesheet" href={{
       "stylesheets/style.css" | url | safe
-    }}>
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    }}> {# Favicon #}
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    {# External JavaScript Libraries #}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    {# Google Analytics #}
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=<ANALYTICS_CODE>>"
@@ -129,6 +131,7 @@
   </head>
 
   <body>
+    {# This is where the content of your specific pages will be injected #}
     {{ content | safe }}
   </body>
 </html>

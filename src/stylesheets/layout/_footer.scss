@@ -1,0 +1,21 @@
+/* src/stylesheets/layout/_footer.scss */
+
+.site-footer {
+  background-color: var(--color-neutral-dark); /* Using token */
+  color: var(--color-neutral-light); /* Using token */
+  padding: var(--spacing-large) 0; /* Using token */
+  text-align: center;
+  margin-top: var(--spacing-x-large); /* Space above footer */
+
+  p {
+    margin-bottom: 0;
+    font-size: var(--font-size-small); /* Using token */
+  }
+
+  a {
+    color: var(--color-accent-light); /* Example link color in footer */
+    &:hover {
+      color: #fff;
+    }
+  }
+}

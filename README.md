@@ -100,6 +100,99 @@ eleventy-project-template/
 ├── package-lock.json # Auto-generated lock file for exact dependency versions 
 ├── package.json # Project metadata and dependencies 
 └── README.md # Project information and usage instructions
+
+
+#new folder structure
+.
+├── _site/                   # Eleventy's output directory (generated)
+├── src/                     # Your source files for Eleventy
+│   ├── _data/
+│   │   ├── site.json
+│   │   └── navigation.json
+│   │
+│   ├── _includes/
+│   │   ├── layouts/
+│   │   │   ├── base.njk
+│   │   │   └── post.njk # Basic example
+│   │   │
+│   │   ├── components/
+│   │   │   ├── card.njk
+│   │   │   ├── button.njk
+│   │   │   ├── carousel.njk # Basic example
+│   │   │   └── form.njk     # Basic example
+│   │   │
+│   │   └── partials/
+│   │       ├── navbar.njk
+│   │       └── footer.njk
+│   │
+│   ├── assets/              # Static assets (images, icons, fonts)
+│   │   ├── images/
+│   │   │   └── product-a.jpg
+│   │   │   └── product-b.jpg
+│   │   ├── icons/
+│   │   │   ├── phone.svg
+│   │   │   ├── email.svg
+│   │   │   └── location.svg
+│   │   └── fonts/
+│   │       └── Inter-Regular.woff2 # Placeholder for a font file
+│   │
+│   ├── scripts/
+│   │   ├── arrowRotate.js # Basic example
+│   │   ├── carousel.js    # Basic example
+│   │   └── formSubmit.js  # Basic example
+│   │
+│   ├── stylesheets/
+│   │   ├── tokens/
+│   │   │   ├── primitives/
+│   │   │   │   ├── _colors.scss
+│   │   │   │   ├── _typography.scss
+│   │   │   │   ├── _spacing.scss
+│   │   │   │   ├── _borders.scss
+│   │   │   │   ├── _shadows.scss
+│   │   │   │   ├── _z-index.scss
+│   │   │   │   ├── _breakpoints.scss
+│   │   │   │   └── _index.scss
+│   │   │   ├── _component-states.scss
+│   │   │   ├── _misc-tokens.scss
+│   │   │   └── _index.scss
+│   │   │
+│   │   ├── base/
+│   │   │   ├── _reset.scss
+│   │   │   └── _global.scss
+│   │   │
+│   │   ├── layout/
+│   │   │   ├── _container.scss # New file for container styles
+│   │   │   ├── _navbar.scss
+│   │   │   └── _footer.scss
+│   │   │
+│   │   ├── components/
+│   │   │   ├── _button.scss
+│   │   │   ├── _card.scss
+│   │   │   ├── _carousel.scss # Basic example
+│   │   │   └── _form.scss     # Basic example
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── _home.scss
+│   │   │   ├── _contact.scss
+│   │   │   └── _about.scss # Basic example
+│   │   │
+│   │   └── main.scss
+│   │
+│   ├── pages/
+│   │   ├── about.njk
+│   │   ├── services.njk # Basic example
+│   │   └── contact.njk
+│   │
+│   ├── index.njk
+│   ├── humans.txt
+│   ├── robots.txt
+│   └── sitemap.xml
+│
+├── .eleventy.js
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
 ```
 
 ## Customization

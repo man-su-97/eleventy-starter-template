@@ -1,0 +1,17 @@
+/* src/stylesheets/tokens/primitives/_borders.scss */
+
+:root {
+  // Border Radii
+  --radius-small: 4px;
+  --radius-medium: 8px;
+  --radius-large: 12px;
+  --radius-circle: 50%; // Added for circular elements
+
+  // Border Widths
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 3px;
+
+  // Default Border Color (often a neutral color)
+  --border-color-default: var(--color-neutral-medium);
+}

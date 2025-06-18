@@ -1,0 +1,30 @@
+/* src/stylesheets/pages/_home.scss */
+
+.home-hero {
+  background-color: var(--color-accent); /* Example */
+  color: #fff;
+  padding: var(--spacing-xx-large) 0;
+  text-align: center;
+
+  h1 {
+    font-size: var(--font-size-heading-1);
+    margin-bottom: var(--spacing-medium);
+  }
+
+  p {
+    font-size: var(--font-size-large);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.home-features {
+  padding: var(--spacing-xx-large) 0;
+  text-align: center;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--grid-gap);
+  }
+}

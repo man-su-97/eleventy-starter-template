@@ -1,0 +1,62 @@
+/* src/stylesheets/layout/_navbar.scss */
+
+.site-header {
+  background-color: var(--color-primary); /* Example */
+  padding: var(--spacing-medium) 0; /* Using token */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  font-size: var(--font-size-heading-3); /* Using token */
+  font-family: var(--font-family-heading); /* Using token */
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav {
+  ul {
+    display: flex;
+    gap: var(--spacing-large); /* Using token */
+  }
+
+  a {
+    color: #fff;
+    font-weight: var(--font-weight-medium); /* Using token */
+    padding: var(--spacing-x-small) 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-accent); /* Using token */
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after,
+    &.active::after {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: var(--breakpoint-md)) {
+  /* Using breakpoint token */
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-nav {
+    margin-top: var(--spacing-medium);
+    ul {
+      flex-direction: column;
+      gap: var(--spacing-small);
+    }
+  }
+}

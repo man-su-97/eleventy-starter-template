@@ -1,0 +1,22 @@
+/* src/stylesheets/main.scss */
+
+// 1. Use all your design tokens (must be first if other files use Sass features from here)
+@use "tokens/" as tokens;
+
+// 2. Import global/base styles that use these tokens
+@import "base/reset";
+@import "base/global";
+
+// 3. Import layout-specific styles
+@import "layout/container";
+@import "layout/navbar";
+@import "layout/footer";
+
+// 4. Import component-specific styles
+@import "components/button";
+@import "components/card";
+
+// 5. Import page-specific styles
+@import "pages/home";
+@import "pages/contact";
+@import "pages/about";
