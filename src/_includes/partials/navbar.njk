@@ -1,8 +1,0 @@
-{# src/_includes/partials/navbar.njk #}
-<nav class="main-nav">
-    <ul>
-        {% for item in navigation.main %}
-            <li><a href="{{ item.url }}" {% if item.url == page.url %}class="active"{% endif %}>{{ item.text }}</a></li>
-        {% endfor %}
-    </ul>
-</nav>

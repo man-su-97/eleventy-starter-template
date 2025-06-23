@@ -1,17 +1,14 @@
-/* src/stylesheets/tokens/primitives/_borders.scss */
-
 :root {
-  // Border Radii
-  --radius-small: 4px;
-  --radius-medium: 8px;
-  --radius-large: 12px;
-  --radius-circle: 50%; // Added for circular elements
+  // Border Radii (aligned with usage in _navbar.scss)
+  --border-radius-sm: 4px;   
+  --border-radius-md: 8px;   
+  --border-radius-lg: 12px;  
+  --border-radius-full: 50%;  
 
   // Border Widths
   --border-width-thin: 1px;
   --border-width-medium: 2px;
   --border-width-thick: 3px;
 
-  // Default Border Color (often a neutral color)
-  --border-color-default: var(--color-neutral-medium);
+  --border-color-default: var(--color-neutral-medium, #cccccc); 
 }

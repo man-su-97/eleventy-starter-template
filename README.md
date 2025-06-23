@@ -113,17 +113,20 @@ eleventy-project-template/
 │   ├── _includes/
 │   │   ├── layouts/
 │   │   │   ├── base.njk
-│   │   │   └── post.njk # Basic example
+│   │   │   ├── post.njk
+│   │   │   ├── post.njk
+│   │   │   ├──post.njk
+│   │   │   ├──navbar.njk
+│   │   │   └── footer.njk 
 │   │   │
 │   │   ├── components/
 │   │   │   ├── card.njk
 │   │   │   ├── button.njk
-│   │   │   ├── carousel.njk # Basic example
-│   │   │   └── form.njk     # Basic example
+│   │   │   ├── carousel.njk 
+│   │   │   └── form.njk    
 │   │   │
 │   │   └── partials/
-│   │       ├── navbar.njk
-│   │       └── footer.njk
+│   │      
 │   │
 │   ├── assets/              # Static assets (images, icons, fonts)
 │   │   ├── images/
@@ -137,12 +140,12 @@ eleventy-project-template/
 │   │       └── Inter-Regular.woff2 # Placeholder for a font file
 │   │
 │   ├── scripts/
-│   │   ├── arrowRotate.js # Basic example
-│   │   ├── carousel.js    # Basic example
-│   │   └── formSubmit.js  # Basic example
+│   │   ├── arrowRotate.js 
+│   │   ├── carousel.js    
+│   │   └── formSubmit.js  
 │   │
-│   ├── stylesheets/
-│   │   ├── tokens/
+│   ├── stylesheets/ # Stylesheets, possibly Sass or CSS files 
+│   │   ├── tokens/  # For design tokens (colors, typography, etc.)
 │   │   │   ├── primitives/
 │   │   │   │   ├── _colors.scss
 │   │   │   │   ├── _typography.scss
@@ -156,39 +159,39 @@ eleventy-project-template/
 │   │   │   ├── _misc-tokens.scss
 │   │   │   └── _index.scss
 │   │   │
-│   │   ├── base/
+│   │   ├── base/       # For global styles (reset, body, html)
 │   │   │   ├── _reset.scss
 │   │   │   └── _global.scss
 │   │   │
-│   │   ├── layout/
+│   │   ├── layout/     # For overall page layout (container, navbar)
 │   │   │   ├── _container.scss # New file for container styles
 │   │   │   ├── _navbar.scss
 │   │   │   └── _footer.scss
 │   │   │
-│   │   ├── components/
+│   │   ├── components/  # For reusable UI components (button, card, etc.)
 │   │   │   ├── _button.scss
 │   │   │   ├── _card.scss
 │   │   │   ├── _carousel.scss # Basic example
 │   │   │   └── _form.scss     # Basic example
 │   │   │
-│   │   ├── pages/
+│   │   ├── pages/      # For page-specific styles (home, contact, about)
 │   │   │   ├── _home.scss
 │   │   │   ├── _contact.scss
 │   │   │   └── _about.scss # Basic example
 │   │   │
-│   │   └── main.scss
+│   │   └── main.scss  # The main entry point that imports all others
 │   │
 │   ├── pages/
 │   │   ├── about.njk
 │   │   ├── services.njk # Basic example
 │   │   └── contact.njk
 │   │
-│   ├── index.njk
+│   ├── index.njk # Main template file 
 │   ├── humans.txt
 │   ├── robots.txt
 │   └── sitemap.xml
 │
-├── .eleventy.js
+├── .eleventy.js # Eleventy configuration file 
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
